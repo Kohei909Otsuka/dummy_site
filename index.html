@@ -3,6 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <title>Kohei dummy site</title>
+    <script type="text/javascript">
+      window.ukAsyncInit = function() {
+        UK.init({
+          cart_domain: "https://next-test2.tamago-cart.com",
+          type: "shop"
+        });
+      };
+
+      (function(d, s, id) {
+         var js, hjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;};
+         js = d.createElement(s);
+         js.async = true;
+         js.id = id;
+         js.src = "https://next-test2.tamago-cart.com/ukokkei-sdk.js";
+         hjs.parentNode.insertBefore(js, hjs);
+       }(document, "script", "ukokkei-sdk"));
+    </script>
   </head>
 
   <body>
