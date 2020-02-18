@@ -26,6 +26,26 @@
 <option value="18">18</option>
 <option value="19">19</option>
 <option value="20">20</option></select></div><button name="button" type="submit" class="btn btn-primary">購入</button></form><pre class="html-tag-content"></pre>
+  <div id="ukokkei-landing-page-container"></div>
+
+<script type="text/javascript">
+  window.ukLpAsyncInit = function() {
+    UK.initLp({
+      cart_domain: "https://next-test5.tamago-cart.com",
+      lp_form_code: "kohei_product_lp"
+    });
+  };
+
+  (function(d, s, id) {
+     var js, hjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;};
+     js = d.createElement(s);
+     js.async = true;
+     js.id = id;
+     js.src = "https://next-test5.tamago-cart.com/ukokkei-sdk.js";
+     hjs.parentNode.insertBefore(js, hjs);
+   }(document, "script", "ukokkei-sdk"));
+</script>
   </body>
 
 </html>
